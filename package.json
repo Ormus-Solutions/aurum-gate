@@ -1,0 +1,20 @@
+{
+  "name": "aurum-gate",
+  "version": "0.1.0",
+  "description": "Confidence-gated action router for TypeSafe Jev answers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": ["jev", "typesafe", "system-one", "confidence", "routing", "ormus"],
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}
