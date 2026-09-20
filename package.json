@@ -1,20 +1,35 @@
 {
-  "name": "aurum-gate",
+  "name": "@ormus/aurum-gate",
   "version": "0.1.0",
-  "description": "Confidence-gated action router for TypeSafe Jev answers",
+  "description": "Confidence-gated Jev action router — liquid gold Pattern 2",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
-  "keywords": ["jev", "typesafe", "system-one", "confidence", "routing", "ormus"],
-  "license": "MIT",
-  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example": "tsx src/example.ts"
+  },
+  "peerDependencies": {
+    "ai": "*",
+    "@typesafe-ai/sdk": "*"
+  },
   "devDependencies": {
-    "typescript": "^5.8.0",
-    "vitest": "^3.0.0"
-  }
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ormus-Solutions/aurum-gate.git"
+  },
+  "keywords": ["jev", "confidence", "router", "typesafe", "ormus", "liquid-gold"]
 }

@@ -3,5 +3,5 @@ dist/
 .env
 .env.*
 *.log
-.DS_Store
 coverage/
+.DS_Store
